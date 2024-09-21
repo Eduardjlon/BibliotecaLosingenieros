@@ -37,5 +37,10 @@ namespace BibliotecaHerecia
             Form realizarPrestamoForm = new RealizarPrestamo();
             realizarPrestamoForm.Show();
         }
+
+        private void Libros_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

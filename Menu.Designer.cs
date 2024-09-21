@@ -29,120 +29,209 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            label1 = new Label();
-            btnAdminMiembros = new PictureBox();
-            btnAdminLibros = new PictureBox();
-            btnRealizarPrestamo = new PictureBox();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            ((System.ComponentModel.ISupportInitialize)btnAdminMiembros).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnAdminLibros).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)btnRealizarPrestamo).BeginInit();
+            panelSideMenu = new Panel();
+            panelPrestamo = new Panel();
+            RealizarPrestamo = new Button();
+            btonPrestamo = new Button();
+            PanelLibros = new Panel();
+            AdministrarLibros = new Button();
+            Libros = new Button();
+            panelMiembros = new Panel();
+            AdminMiembros = new Button();
+            btonMiembro = new Button();
+            panelLogo = new Panel();
+            panelSideMenu.SuspendLayout();
+            panelPrestamo.SuspendLayout();
+            PanelLibros.SuspendLayout();
+            panelMiembros.SuspendLayout();
             SuspendLayout();
             // 
-            // label1
+            // panelSideMenu
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(46, 49);
-            label1.Name = "label1";
-            label1.Size = new Size(333, 25);
-            label1.TabIndex = 7;
-            label1.Text = "Seleccione una opción para comenzar";
+            panelSideMenu.AutoScroll = true;
+            panelSideMenu.BackColor = Color.Black;
+            panelSideMenu.Controls.Add(panelPrestamo);
+            panelSideMenu.Controls.Add(PanelLibros);
+            panelSideMenu.Controls.Add(panelMiembros);
+            panelSideMenu.Controls.Add(btonMiembro);
+            panelSideMenu.Controls.Add(panelLogo);
+            panelSideMenu.Dock = DockStyle.Left;
+            panelSideMenu.Location = new Point(0, 0);
+            panelSideMenu.Name = "panelSideMenu";
+            panelSideMenu.Size = new Size(185, 561);
+            panelSideMenu.TabIndex = 14;
             // 
-            // btnAdminMiembros
+            // panelPrestamo
             // 
-            btnAdminMiembros.Image = Properties.Resources.miembros;
-            btnAdminMiembros.InitialImage = Properties.Resources.miembros;
-            btnAdminMiembros.Location = new Point(94, 139);
-            btnAdminMiembros.Name = "btnAdminMiembros";
-            btnAdminMiembros.Size = new Size(140, 146);
-            btnAdminMiembros.SizeMode = PictureBoxSizeMode.StretchImage;
-            btnAdminMiembros.TabIndex = 8;
-            btnAdminMiembros.TabStop = false;
-            btnAdminMiembros.Click += btnAdminMiembros_Click;
+            panelPrestamo.BackColor = Color.FromArgb(64, 64, 64);
+            panelPrestamo.Controls.Add(RealizarPrestamo);
+            panelPrestamo.Controls.Add(btonPrestamo);
+            panelPrestamo.Dock = DockStyle.Top;
+            panelPrestamo.Location = new Point(0, 294);
+            panelPrestamo.Name = "panelPrestamo";
+            panelPrestamo.Size = new Size(185, 92);
+            panelPrestamo.TabIndex = 0;
             // 
-            // btnAdminLibros
+            // RealizarPrestamo
             // 
-            btnAdminLibros.Image = Properties.Resources.libros;
-            btnAdminLibros.InitialImage = Properties.Resources.libros;
-            btnAdminLibros.Location = new Point(330, 139);
-            btnAdminLibros.Name = "btnAdminLibros";
-            btnAdminLibros.Size = new Size(140, 146);
-            btnAdminLibros.SizeMode = PictureBoxSizeMode.StretchImage;
-            btnAdminLibros.TabIndex = 9;
-            btnAdminLibros.TabStop = false;
-            btnAdminLibros.Click += btnAdminLibros_Click;
+            RealizarPrestamo.Dock = DockStyle.Top;
+            RealizarPrestamo.FlatAppearance.BorderSize = 0;
+            RealizarPrestamo.FlatAppearance.MouseDownBackColor = Color.Red;
+            RealizarPrestamo.FlatAppearance.MouseOverBackColor = Color.Blue;
+            RealizarPrestamo.FlatStyle = FlatStyle.Flat;
+            RealizarPrestamo.ForeColor = Color.White;
+            RealizarPrestamo.Location = new Point(0, 45);
+            RealizarPrestamo.Name = "RealizarPrestamo";
+            RealizarPrestamo.Padding = new Padding(35, 0, 0, 0);
+            RealizarPrestamo.Size = new Size(185, 40);
+            RealizarPrestamo.TabIndex = 1;
+            RealizarPrestamo.Text = "Realizar Prestamo";
+            RealizarPrestamo.TextAlign = ContentAlignment.MiddleLeft;
+            RealizarPrestamo.UseVisualStyleBackColor = true;
             // 
-            // btnRealizarPrestamo
+            // btonPrestamo
             // 
-            btnRealizarPrestamo.Image = Properties.Resources.prestamo;
-            btnRealizarPrestamo.InitialImage = Properties.Resources.prestamo;
-            btnRealizarPrestamo.Location = new Point(571, 139);
-            btnRealizarPrestamo.Name = "btnRealizarPrestamo";
-            btnRealizarPrestamo.Size = new Size(140, 146);
-            btnRealizarPrestamo.SizeMode = PictureBoxSizeMode.StretchImage;
-            btnRealizarPrestamo.TabIndex = 10;
-            btnRealizarPrestamo.TabStop = false;
-            btnRealizarPrestamo.Click += btnRealizarPrestamo_Click;
+            btonPrestamo.BackColor = Color.Black;
+            btonPrestamo.Dock = DockStyle.Top;
+            btonPrestamo.FlatAppearance.BorderSize = 0;
+            btonPrestamo.FlatAppearance.MouseDownBackColor = Color.Red;
+            btonPrestamo.FlatAppearance.MouseOverBackColor = Color.Blue;
+            btonPrestamo.FlatStyle = FlatStyle.Flat;
+            btonPrestamo.ForeColor = Color.White;
+            btonPrestamo.Location = new Point(0, 0);
+            btonPrestamo.Name = "btonPrestamo";
+            btonPrestamo.Padding = new Padding(10, 0, 0, 0);
+            btonPrestamo.Size = new Size(185, 45);
+            btonPrestamo.TabIndex = 0;
+            btonPrestamo.Text = "Prestamos";
+            btonPrestamo.TextAlign = ContentAlignment.MiddleLeft;
+            btonPrestamo.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // PanelLibros
             // 
-            label2.Location = new Point(94, 301);
-            label2.Name = "label2";
-            label2.Size = new Size(140, 45);
-            label2.TabIndex = 11;
-            label2.Text = "Administración de Miembros";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
+            PanelLibros.BackColor = Color.FromArgb(64, 64, 64);
+            PanelLibros.Controls.Add(AdministrarLibros);
+            PanelLibros.Controls.Add(Libros);
+            PanelLibros.Dock = DockStyle.Top;
+            PanelLibros.Location = new Point(0, 194);
+            PanelLibros.Name = "PanelLibros";
+            PanelLibros.Size = new Size(185, 100);
+            PanelLibros.TabIndex = 3;
             // 
-            // label3
+            // AdministrarLibros
             // 
-            label3.Location = new Point(330, 301);
-            label3.Name = "label3";
-            label3.Size = new Size(140, 45);
-            label3.TabIndex = 12;
-            label3.Text = "Administración de Libros";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
+            AdministrarLibros.BackColor = Color.FromArgb(64, 64, 64);
+            AdministrarLibros.Dock = DockStyle.Top;
+            AdministrarLibros.FlatAppearance.BorderSize = 0;
+            AdministrarLibros.FlatStyle = FlatStyle.Flat;
+            AdministrarLibros.ForeColor = Color.White;
+            AdministrarLibros.Location = new Point(0, 45);
+            AdministrarLibros.Name = "AdministrarLibros";
+            AdministrarLibros.Padding = new Padding(35, 0, 0, 0);
+            AdministrarLibros.Size = new Size(185, 40);
+            AdministrarLibros.TabIndex = 1;
+            AdministrarLibros.Text = "Administrar Libros";
+            AdministrarLibros.TextAlign = ContentAlignment.MiddleLeft;
+            AdministrarLibros.UseVisualStyleBackColor = false;
             // 
-            // label4
+            // Libros
             // 
-            label4.Location = new Point(583, 311);
-            label4.Name = "label4";
-            label4.Size = new Size(128, 25);
-            label4.TabIndex = 13;
-            label4.Text = "Realizar Préstamo";
-            label4.TextAlign = ContentAlignment.MiddleCenter;
+            Libros.BackColor = Color.Black;
+            Libros.Dock = DockStyle.Top;
+            Libros.FlatAppearance.BorderSize = 0;
+            Libros.FlatAppearance.MouseDownBackColor = Color.Red;
+            Libros.FlatAppearance.MouseOverBackColor = Color.Blue;
+            Libros.FlatStyle = FlatStyle.Flat;
+            Libros.ForeColor = Color.White;
+            Libros.Location = new Point(0, 0);
+            Libros.Name = "Libros";
+            Libros.Padding = new Padding(10, 0, 0, 0);
+            Libros.Size = new Size(185, 45);
+            Libros.TabIndex = 0;
+            Libros.Text = "Libros";
+            Libros.TextAlign = ContentAlignment.MiddleLeft;
+            Libros.UseVisualStyleBackColor = false;
+            Libros.Click += Libros_Click;
+            // 
+            // panelMiembros
+            // 
+            panelMiembros.BackColor = Color.FromArgb(64, 64, 64);
+            panelMiembros.Controls.Add(AdminMiembros);
+            panelMiembros.Dock = DockStyle.Top;
+            panelMiembros.Location = new Point(0, 145);
+            panelMiembros.Name = "panelMiembros";
+            panelMiembros.Size = new Size(185, 49);
+            panelMiembros.TabIndex = 2;
+            // 
+            // AdminMiembros
+            // 
+            AdminMiembros.Dock = DockStyle.Top;
+            AdminMiembros.FlatAppearance.BorderSize = 0;
+            AdminMiembros.FlatAppearance.MouseDownBackColor = Color.Red;
+            AdminMiembros.FlatAppearance.MouseOverBackColor = Color.Blue;
+            AdminMiembros.FlatStyle = FlatStyle.Flat;
+            AdminMiembros.ForeColor = Color.White;
+            AdminMiembros.Location = new Point(0, 0);
+            AdminMiembros.Name = "AdminMiembros";
+            AdminMiembros.Padding = new Padding(35, 0, 0, 0);
+            AdminMiembros.Size = new Size(185, 40);
+            AdminMiembros.TabIndex = 0;
+            AdminMiembros.Text = "Administrar Miembro";
+            AdminMiembros.TextAlign = ContentAlignment.MiddleLeft;
+            AdminMiembros.UseVisualStyleBackColor = true;
+            // 
+            // btonMiembro
+            // 
+            btonMiembro.Dock = DockStyle.Top;
+            btonMiembro.FlatAppearance.BorderSize = 0;
+            btonMiembro.FlatStyle = FlatStyle.Flat;
+            btonMiembro.ForeColor = Color.White;
+            btonMiembro.Location = new Point(0, 100);
+            btonMiembro.Name = "btonMiembro";
+            btonMiembro.Padding = new Padding(10, 0, 0, 0);
+            btonMiembro.Size = new Size(185, 45);
+            btonMiembro.TabIndex = 1;
+            btonMiembro.Text = "Miembros";
+            btonMiembro.TextAlign = ContentAlignment.MiddleLeft;
+            btonMiembro.UseVisualStyleBackColor = true;
+            // 
+            // panelLogo
+            // 
+            panelLogo.Dock = DockStyle.Top;
+            panelLogo.Location = new Point(0, 0);
+            panelLogo.Name = "panelLogo";
+            panelLogo.Size = new Size(185, 100);
+            panelLogo.TabIndex = 0;
             // 
             // Menu
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 455);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(btnRealizarPrestamo);
-            Controls.Add(btnAdminLibros);
-            Controls.Add(btnAdminMiembros);
-            Controls.Add(label1);
+            ClientSize = new Size(934, 561);
+            Controls.Add(panelSideMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
+            Margin = new Padding(3, 2, 3, 2);
+            MinimumSize = new Size(950, 600);
             Name = "Menu";
             Text = "Menu";
-            ((System.ComponentModel.ISupportInitialize)btnAdminMiembros).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnAdminLibros).EndInit();
-            ((System.ComponentModel.ISupportInitialize)btnRealizarPrestamo).EndInit();
+            panelSideMenu.ResumeLayout(false);
+            panelPrestamo.ResumeLayout(false);
+            PanelLibros.ResumeLayout(false);
+            panelMiembros.ResumeLayout(false);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-        private Label label1;
-        private PictureBox btnAdminMiembros;
-        private PictureBox btnAdminLibros;
-        private PictureBox btnRealizarPrestamo;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private Panel panelSideMenu;
+        private Panel panelMiembros;
+        private Button AdminMiembros;
+        private Button btonMiembro;
+        private Panel panelLogo;
+        private Panel PanelLibros;
+        private Button Libros;
+        private Button AdministrarLibros;
+        private Panel panelPrestamo;
+        private Button RealizarPrestamo;
+        private Button btonPrestamo;
     }
 }
