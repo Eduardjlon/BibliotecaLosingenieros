@@ -225,6 +225,7 @@
             MinimumSize = new Size(1083, 784);
             Name = "Menu";
             Text = "Menu";
+            Load += Menu_Load;
             panelSideMenu.ResumeLayout(false);
             panelPrestamo.ResumeLayout(false);
             PanelLibros.ResumeLayout(false);
