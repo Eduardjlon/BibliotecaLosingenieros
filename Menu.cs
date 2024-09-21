@@ -42,5 +42,10 @@ namespace BibliotecaHerecia
         {
 
         }
+        // Quedice ai no se inglesh
+        private void btonMiembro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
