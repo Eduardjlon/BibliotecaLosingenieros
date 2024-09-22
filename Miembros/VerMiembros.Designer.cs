@@ -45,25 +45,10 @@
             listaMiembros.TabIndex = 0;
             // 
             // btnAgregar
-            // 
-            btnAgregar.Image = Image.FromFile("C:/Users/Dell/source/repos/BibliotecaLosingenieros/ImagenesBiblioteca/agregar.png");
-            btnAgregar.Location = new Point(906, 38);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(47, 47);
-            btnAgregar.SizeMode = PictureBoxSizeMode.StretchImage;
-            btnAgregar.TabIndex = 1;
-            btnAgregar.TabStop = false;
-            btnAgregar.Click += iniciarCreacionMiembro_Click;
+
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(959, 50);
-            label1.Name = "label1";
-            label1.Size = new Size(128, 20);
-            label1.TabIndex = 2;
-            label1.Text = "Agregar Miembro";
-            label1.Click += iniciarCreacionMiembro_Click;
             // 
             // txtBoxBuscar
             // 

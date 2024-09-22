@@ -1,4 +1,5 @@
 ﻿using BibliotecaHerecia.Clases;
+using BibliotecaLosingenieros2;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,13 +24,13 @@ namespace BibliotecaHerecia.Prestamos
 
         private void btnRealizarPrestamo_Click(object sender, EventArgs e)
         {
+
             Miembro miembroSeleccionado = (Miembro)miembrosComboBox.SelectedItem;
             Libro libroSeleccionado = (Libro)librosComboBox.SelectedItem;
             Prestamo nuevoPrestamo = new Prestamo(DateTime.Now, fechaDevolucionDatePicker.Value, libroSeleccionado, miembroSeleccionado);
             AppState.Instance.bibliotecaActual.RealizarPrestamo(nuevoPrestamo);
-
-            MessageBox.Show($"Prestamo {nuevoPrestamo.Id} realizado con éxito, hay {AppState.Instance.bibliotecaActual.prestamos.Count()} prestamos actualmente");
-            this.Close();
+            ToastForm toast = new ToastForm();
+            toast.Show();
         }
 
         private void inicializarMiembros()

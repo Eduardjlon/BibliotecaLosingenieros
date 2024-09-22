@@ -65,16 +65,7 @@
             label1.Text = "Agregar Libro";
             label1.Click += iniciarCreacionLibro_Click;
             // 
-            // btnAgregar
-            // 
-            btnAgregar.Image = Image.FromFile("C:/Users/Dell/source/repos/BibliotecaLosingenieros/ImagenesBiblioteca/libros.png");
-            btnAgregar.Location = new Point(899, 30);
-            btnAgregar.Name = "btnAgregar";
-            btnAgregar.Size = new Size(47, 47);
-            btnAgregar.SizeMode = PictureBoxSizeMode.StretchImage;
-            btnAgregar.TabIndex = 6;
-            btnAgregar.TabStop = false;
-            btnAgregar.Click += iniciarCreacionLibro_Click;
+
             // 
             // listaLibros
             // 
