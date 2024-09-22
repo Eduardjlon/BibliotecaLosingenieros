@@ -46,8 +46,7 @@
             // 
             // btnAgregar
             // 
-            btnAgregar.Image = Properties.Resources.agregar;
-            btnAgregar.InitialImage = Properties.Resources.agregar;
+            btnAgregar.Image = Image.FromFile("C:/Users/Dell/source/repos/BibliotecaLosingenieros2/ImagenesBiblioteca/agregar.png");
             btnAgregar.Location = new Point(906, 38);
             btnAgregar.Name = "btnAgregar";
             btnAgregar.Size = new Size(47, 47);
